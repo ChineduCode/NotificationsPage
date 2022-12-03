@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 2em;
+  background-color: hsl(0deg, 0%, 100%);
+  font-family: "Plus Jakarta Sans";
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
+}
+.header .ntf-section .ntf-text {
+  font-size: 20px;
+  font-weight: 800;
+}
+.header .ntf-section .ntf-num {
+  position: relative;
+  left: 7px;
+  bottom: 3px;
+  font-weight: 800;
+  background-color: hsl(219deg, 85%, 26%);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.header .mar-section .mar-text {
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+}
+.header .mar-section .mar-text:active {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: bold;
+}
+
+.main .unread-msg {
+  background-color: hsl(210deg, 60%, 98%);
+}
+.main .ntf-container {
+  display: flex;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.main .ntf-container img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.main .ntf-container .msg-container {
+  margin-left: 15px;
+  color: hsl(219deg, 12%, 42%);
+}
+.main .ntf-container .msg-container .msg-header .name {
+  font-weight: 700;
+  margin-right: 5px;
+  color: black;
+  cursor: pointer;
+}
+.main .ntf-container .msg-container .msg-header .name:active {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+}
+.main .ntf-container .msg-container .msg-header .post-header {
+  font-weight: 600;
+  cursor: pointer;
+}
+.main .ntf-container .msg-container .msg-header .post-header:active {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 700;
+}
+.main .ntf-container .msg-container .msg-header .group-name {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 600;
+  cursor: pointer;
+}
+.main .ntf-container .msg-container .msg-header .group-name:active {
+  font-weight: 800;
+}
+.main .ntf-container .msg-container .msg-header .time {
+  margin-top: 2px;
+}
+.main .ntf-container .msg-container .private-msg {
+  margin-top: 10px;
+  border: solid 1px hsl(219deg, 14%, 63%);
+  border-radius: 10px;
+  padding: 1em;
+}
+.main .ntf-container .img-posted-container {
+  display: flex;
+}
+.main .ntf-container .img-posted-container .img-posted {
+  justify-self: flex-end;
+}
+@media only screen and (min-width: 511px) {
+  .main .ntf-container .img-posted-container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .main .ntf-container .img-posted-container .img-posted {
+    justify-self: end;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: hsl(210deg, 60%, 98%);
+    padding: 3%;
+  }
+  .container {
+    background-color: white;
+    width: 800px;
+    max-width: 100%;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 3px hsl(205deg, 33%, 90%);
+  }
+}/*# sourceMappingURL=style.css.map */
